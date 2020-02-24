@@ -19,5 +19,22 @@
   "bugs": {
     "url": "https://github.com/francofantini/csv-tools-cli/issues"
   },
-  "homepage": "https://github.com/francofantini/csv-tools-cli#readme"
+  "homepage": "https://github.com/francofantini/csv-tools-cli#readme",
+  "dependencies": {
+    "csv-parser": "^2.3.2",
+    "json2csv": "^4.5.4",
+    "object-hash": "^2.0.3",
+    "progress": "^2.0.3",
+    "yargs": "^15.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-no-only-tests": "^2.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.17.1",
+    "prettier-eslint": "^8.8.2"
+  }
 }

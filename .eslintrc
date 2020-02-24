@@ -1,0 +1,36 @@
+{
+  "extends": ["prettier"],
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "sourceType": "module"
+  },
+  "env": {
+    "commonjs": true,
+    "browser": true,
+    "serviceworker": true,
+    "worker": true,
+    "es6": true,
+    "node": true,
+    "amd": true
+  },
+  "rules": {
+    "strict": 0,
+    "indent": ["error", 4, { "SwitchCase": 1 }],
+    "max-len": ["error", 200],
+    "lines-between-class-members": "off",
+    "no-shadow": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    "import/no-named-as-default": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "one-var-declaration-per-line": "off",
+    "one-var": "off",
+    "prefer-destructuring": ["error", { "object": true, "array": false }],
+    "no-case-declarations": "off",
+    //    "no-console": "error",
+    "no-only-tests/no-only-tests": "error",
+    "no-underscore-dangle": "off",
+    "prettier/prettier": "error"
+  },
+  "globals": {},
+  "plugins": ["no-only-tests", "prettier"]
+}
