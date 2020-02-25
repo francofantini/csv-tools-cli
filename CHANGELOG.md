@@ -19,10 +19,6 @@
 
 * **Diff:**  Moves readFile function to utils.js. ([14c14edd](https://github.com/francofantini/csv-tools-cli/commit/14c14edd8732bce67cc6230a00b0e3ff04e80d46))
 
-# Changelog
-
-All notable changes to this project will be documented in this file. 
-
 ## 1.0.0 (2020-02-25)
 
 ##### New Features
