@@ -14,6 +14,9 @@ npm i -g csv-tools-cli
 
 ## Usage
 
+### Diff
+Output de diff between file A and B.
+
 ```bash
 csv-tools diff a.csv b.csv [out.csv]
 ```
