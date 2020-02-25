@@ -14,8 +14,18 @@ npm i -g csv-tools-cli
 
 ## Usage
 
+### Diff
+Output the diff between file A and B.
+
 ```bash
 csv-tools diff a.csv b.csv [out.csv]
+```
+
+### Length
+Output the length of a file.
+
+```bash
+csv-tools length a.csv
 ```
 
 ## Contributing

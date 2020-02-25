@@ -1,6 +1,4 @@
-const csv = require('csv-parser');
-const fs = require('fs');
-const { saveToFile } = require('../lib/utils/utils');
+const { saveToFile, readFile } = require('../lib/utils/utils');
 const Logger = require('../lib/utils/logger');
 const progressBar = require('../lib/utils/progress');
 const hash = require('object-hash');
@@ -28,18 +26,6 @@ const getDiff = (dataA, dataB, progress) => {
 
 const diff = argv => {
     const { fileA, fileB, outFile, verbose, progress: progressEnabled } = argv;
-
-    const readFile = filename => {
-        const rows = [];
-        return new Promise(resolve => {
-            fs.createReadStream(filename)
-                .pipe(csv())
-                .on('data', data => rows.push(data))
-                .on('end', () => {
-                    resolve(rows);
-                });
-        });
-    };
 
     Logger.log('Loading files', verbose);
     const readFileAPromiseA = readFile(fileA);
