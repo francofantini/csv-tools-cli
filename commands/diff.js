@@ -1,8 +1,8 @@
 const csv = require('csv-parser');
 const fs = require('fs');
-const { saveToFile } = require('../utils/utils');
-const Logger = require('../utils/logger');
-const progressBar = require('../utils/progress');
+const { saveToFile } = require('../lib/utils/utils');
+const Logger = require('../lib/utils/logger');
+const progressBar = require('../lib/utils/progress');
 const hash = require('object-hash');
 
 const getHash = value => hash.MD5(value);

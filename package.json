@@ -2,7 +2,7 @@
   "name": "csv-tools-cli",
   "version": "1.0.0",
   "description": "A command line tool to work with csv files.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,8 +12,11 @@
   },
   "keywords": [
     "csv",
-    "cli"
+    "csv-tools"
   ],
+  "bin": {
+    "csv-tools": "./bin/index.js"
+  },
   "author": "Franco Fantini",
   "license": "ISC",
   "bugs": {
